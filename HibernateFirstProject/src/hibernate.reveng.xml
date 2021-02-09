@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="aircraft" match-name="air_customer"/>
+  <table-filter match-catalog="aircraft" match-name="air_models"/>
+  <table-filter match-catalog="aircraft" match-name="air_qualification"/>
+  <table-filter match-catalog="aircraft" match-name="airs_model"/>
+  <table-filter match-catalog="aircraft" match-name="asuers"/>
+  <table-filter match-catalog="aircraft" match-name="charter_nextval"/>
+  <table-filter match-catalog="aircraft" match-name="contacts"/>
+  <table-filter match-catalog="aircraft" match-name="customer_nextval"/>
+  <table-filter match-catalog="aircraft" match-name="employee_nextval"/>
+  <table-filter match-catalog="aircraft" match-name="login_nextval"/>
+  <table-filter match-catalog="aircraft" match-name="transaction_nextval"/>
+  <table-filter match-catalog="aircraft" match-name="users"/>
+</hibernate-reverse-engineering>

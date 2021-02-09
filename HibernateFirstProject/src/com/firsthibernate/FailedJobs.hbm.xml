@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 02 Sep 2020 9:48:17 AM by Hibernate Tools 5.3.0.Beta2 -->
+<hibernate-mapping>
+
+<class
+    name="com.firsthibernate.FailedJobs"
+    table="failed_jobs"
+    catalog="aircraft"
+    optimistic-lock="version"
+>
+
+	<id 
+        name="id"
+        type="java.lang.Long"
+    >
+    
+<column name="id" />
+	    <generator class="identity" />
+    </id>
+
+
+
+
+    <property
+        name="connection"
+	    type="string"
+    >
+<column name="connection" length="65535" not-null="true" />
+  </property>
+
+    <property
+        name="queue"
+	    type="string"
+    >
+<column name="queue" length="65535" not-null="true" />
+  </property>
+
+    <property
+        name="payload"
+	    type="string"
+    >
+<column name="payload" not-null="true" />
+  </property>
+
+    <property
+        name="exception"
+	    type="string"
+    >
+<column name="exception" not-null="true" />
+  </property>
+
+    <property
+        name="failedAt"
+	    type="timestamp"
+    >
+<column name="failed_at" length="19" not-null="true" />
+  </property>
+
+
+</class>
+
+</hibernate-mapping>

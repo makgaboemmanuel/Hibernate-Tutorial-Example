@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 02 Sep 2020 10:42:50 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="aircraft" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.firsthibernate.AirsModel" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="airs_model">
+        <id name="modCode" type="string">
+            <column length="10" name="mod_code"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="modManufacturer" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="mod_manufacturer"/>
+        </property>
+        <property generated="never" lazy="false" name="modName" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="mod_name"/>
+        </property>
+        <property generated="never" lazy="false" name="modSeats" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="mod_seats" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="modChgMile" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="mod_chg_mile" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="modWaitChg" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="mod_wait_chg" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="modCruise" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="mod_cruise" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="modFuelHr" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="mod_fuel_hr" precision="12" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

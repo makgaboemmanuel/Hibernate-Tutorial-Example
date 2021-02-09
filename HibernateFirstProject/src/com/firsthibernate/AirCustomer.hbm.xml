@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 02 Sep 2020 10:42:50 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="aircraft" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.firsthibernate.AirCustomer" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="air_customer">
+        <id name="custNum" type="float">
+            <column name="cust_num" precision="12" scale="0"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="custTitle" optimistic-lock="true" type="string" unique="false">
+            <column length="4" name="cust_title"/>
+        </property>
+        <property generated="never" lazy="false" name="custLname" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="cust_lname"/>
+        </property>
+        <property generated="never" lazy="false" name="custFname" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="cust_fname"/>
+        </property>
+        <property generated="never" lazy="false" name="custItitial" optimistic-lock="true" type="string" unique="false">
+            <column length="1" name="cust_ititial"/>
+        </property>
+        <property generated="never" lazy="false" name="custAddress" optimistic-lock="true" type="string" unique="false">
+            <column length="35" name="cust_address"/>
+        </property>
+        <property generated="never" lazy="false" name="custCity" optimistic-lock="true" type="string" unique="false">
+            <column length="35" name="cust_city"/>
+        </property>
+        <property generated="never" lazy="false" name="custState" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="cust_state"/>
+        </property>
+        <property generated="never" lazy="false" name="custZip" optimistic-lock="true" type="string" unique="false">
+            <column length="9" name="cust_zip"/>
+        </property>
+        <property generated="never" lazy="false" name="custAreacode" optimistic-lock="true" type="string" unique="false">
+            <column length="3" name="cust_areacode"/>
+        </property>
+        <property generated="never" lazy="false" name="custPhone" optimistic-lock="true" type="string" unique="false">
+            <column length="8" name="cust_phone"/>
+        </property>
+        <property generated="never" lazy="false" name="custBalance" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="cust_balance" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="custLimit" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="cust_limit" precision="12" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

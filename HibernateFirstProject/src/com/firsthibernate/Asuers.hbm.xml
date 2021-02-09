@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 02 Sep 2020 10:42:50 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="aircraft" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.firsthibernate.Asuers" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="asuers">
+        <composite-id class="com.firsthibernate.AsuersId" mapped="false" name="id" unsaved-value="undefined">
+            <key-property name="id" type="int">
+                <column name="id"/>
+            </key-property>
+            <key-property name="email" type="string">
+                <column length="50" name="email"/>
+            </key-property>
+            <key-property name="username" type="string">
+                <column length="30" name="username"/>
+            </key-property>
+            <key-property name="password" type="string">
+                <column length="60" name="password"/>
+            </key-property>
+            <key-property name="passwordTemp" type="string">
+                <column length="60" name="password_temp"/>
+            </key-property>
+            <key-property name="code" type="string">
+                <column length="60" name="code"/>
+            </key-property>
+            <key-property name="active" type="int">
+                <column name="active"/>
+            </key-property>
+            <key-property name="createdAt" type="timestamp">
+                <column length="19" name="created_at"/>
+            </key-property>
+            <key-property name="updatedAt" type="timestamp">
+                <column length="19" name="updated_at"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
